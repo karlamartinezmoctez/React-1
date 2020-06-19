@@ -19,7 +19,7 @@ const SignUp = () => {
         //     .string()
         //     .email("Must be a valid email address.")
         //     .required("Must include email address."),
-        // password: yup.string().required("")
+        password: yup.string().required(""),
         subscribe: yup.boolean(),
         terms: yup.boolean().oneOf([true], "Please agree to terms of use"),
     });
